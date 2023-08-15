@@ -25,14 +25,16 @@ deb http://archive.canonical.com/ubuntu/ jammy partner
 
 ### Add apt proxy on nexus server:
 ```
-# Example: 
-Distributian name  >> jammy
+# Example:
+
+# Distributian name
+- jammy
 
 # Add on remote storage section:
-http://archive.ubuntu.com/ubuntu/
+- http://archive.ubuntu.com/ubuntu/
 
 # Export:
-http://192.168.200.11:8081/repository/apt-proxy/
+- http://192.168.200.11:8081/repository/apt-proxy/
 
 ```
 
