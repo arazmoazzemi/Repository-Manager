@@ -1,6 +1,6 @@
 
 # Nexsus repository on ubuntu 22.04
-#### official ubuntu repository
+### Official ubuntu repository
 
 ```
 cat /etc/apt/sources.list
@@ -23,18 +23,22 @@ deb http://archive.canonical.com/ubuntu/ jammy partner
 # deb-src http://archive.canonical.com/ubuntu/ jammy partner
 ```
 
-# Add apt proxy on nexus server:
+### Add apt proxy on nexus server:
 ```
 # Example: 
 Distributian name  >> jammy
 
-Remote storage :
+# Add on remote storage section:
 http://archive.ubuntu.com/ubuntu/
+
+# Export:
+http://192.168.200.11:8081/repository/apt-proxy/
+
 ```
 
 
 
-http://192.168.200.11:8081/repository/apt-proxy/
+
 
 
 
