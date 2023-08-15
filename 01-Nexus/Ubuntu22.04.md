@@ -4,6 +4,9 @@
 -----------------------------------------------------------
 # official ubuntu repository
 
+```
+cat /etc/apt/sources.list
+
 Ubuntu 22.04 LTS (Jammy Jellyfish) complete sources.list
 sources.list
 deb http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
@@ -20,7 +23,7 @@ deb http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe m
 
 deb http://archive.canonical.com/ubuntu/ jammy partner
 # deb-src http://archive.canonical.com/ubuntu/ jammy partner
-
+```
 
 --------------------------------------------------------------------------------------------
 
