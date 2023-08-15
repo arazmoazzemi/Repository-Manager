@@ -22,8 +22,9 @@ deb http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe m
 deb http://archive.canonical.com/ubuntu/ jammy partner
 # deb-src http://archive.canonical.com/ubuntu/ jammy partner
 ```
-_
+
 ### Add apt proxy on nexus server:
+
 ```
 # Example:
 
