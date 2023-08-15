@@ -1,5 +1,5 @@
 
-# Nexsus repositoryn on ubuntu 22.04
+# Nexsus repository on ubuntu 22.04
 # official ubuntu repository
 
 ```
@@ -23,17 +23,14 @@ deb http://archive.canonical.com/ubuntu/ jammy partner
 # deb-src http://archive.canonical.com/ubuntu/ jammy partner
 ```
 
---------------------------------------------------------------------------------------------
-
-
-# Apt proxy : >>
-
+# Add apt proxy on nexus server:
+```
 # Example: 
 Distributian name  >> jammy
 
 Remote storage :
 http://archive.ubuntu.com/ubuntu/
-
+```
 
 
 
