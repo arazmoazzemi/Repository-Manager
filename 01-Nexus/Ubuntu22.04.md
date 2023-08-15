@@ -1,6 +1,6 @@
 
 # Nexsus repository on ubuntu 22.04
-## official ubuntu repository
+#### official ubuntu repository
 
 ```
 cat /etc/apt/sources.list
