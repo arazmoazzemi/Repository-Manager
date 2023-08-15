@@ -38,16 +38,16 @@ deb http://archive.canonical.com/ubuntu/ jammy partner
 - http://192.168.200.11:8081/repository/apt-proxy/
 
 ```
+----
 
-
-
-# APT hosted : >>
+```
+# APT hosted : 
 
 sudo apt-get update
 sudo apt-get install gpg
 sudo gpg --gen-key
 
-# For example >> 9890EBFCAE40AA9D9BD03ED9E734932B938F3E54
+# For example >>> 9890EBFCAE40AA9D9BD03ED9E734932B938F3E54
 
 sudo gpg --list-keys
 cd <path to the folder to import the key pair>
@@ -69,7 +69,7 @@ apt-key add <full folder path in the container>/public.gpg.key
 # Deploying Packages to Apt Hosted Repositories
 
 curl -u "admin:admin123" -H "Content-Type: multipart/form-data" --data-binary "@./test.deb" "http://localhost:8081/repository/apt-hosted/"
-
+```
 
 
 
