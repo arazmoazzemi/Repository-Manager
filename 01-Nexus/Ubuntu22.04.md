@@ -23,8 +23,8 @@ deb http://archive.canonical.com/ubuntu/ jammy partner
 # deb-src http://archive.canonical.com/ubuntu/ jammy partner
 ```
 
-~ ### Add apt proxy on nexus server:
-
+### Add apt proxy on nexus server:
+---
 ```
 # Example:
 
