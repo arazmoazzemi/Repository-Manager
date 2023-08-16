@@ -146,6 +146,7 @@ curl -u "admin:admin123" -H "Content-Type: multipart/form-data" --data-binary "@
 
 # Pyhyhon PYPI
 
+```
 https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/pypi-repositories#PyPIRepositories-BrowsingPyPIRepositoriesandSearchingPackages
 https://pip.pypa.io/en/stable/topics/configuration/#location
 
@@ -154,15 +155,10 @@ apt-get install python3-pip
 pip3 install --upgrade pip
 python3 -m pip install --upgrade pip
 
-
------------------------------------easy way---------------------------------------------------------------------------
+# Easy way 
 
 pip install --index-url http://192.168.200.11:8081/repository/pypi-proxy/simple flask
 pip install --index-url http://192.168.200.11:8081/repository/pypi-proxy/simple -v --trusted-host 192.168.200.11 flask
-
-
-
-
 
 
 ----------To build and upload this package's source distribution (sdist) to testpypi:-------------------------------------------------------
@@ -189,6 +185,6 @@ trusted-host = 192.168.200.11
 pip search example-package
 
 --------------------------------------------------------------------------------------------------------------------------
-
+```
 
 
