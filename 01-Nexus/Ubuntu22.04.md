@@ -142,12 +142,10 @@ apt-key add <full folder path in the container>/public.gpg.key
 
 curl -u "admin:admin123" -H "Content-Type: multipart/form-data" --data-binary "@./test.deb" "http://localhost:8081/repository/apt-hosted/"
 ```
+----
 
+# Pyhyhon PYPI
 
-
------------------------------------------------------------
--------############# PYPI ###########----------------------
------------------------------------------------------------
 https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/pypi-repositories#PyPIRepositories-BrowsingPyPIRepositoriesandSearchingPackages
 https://pip.pypa.io/en/stable/topics/configuration/#location
 
