@@ -144,7 +144,7 @@ curl -u "admin:admin123" -H "Content-Type: multipart/form-data" --data-binary "@
 ```
 ----
 
-# Pyhyhon PYPI
+# Python PYPI
 
 ```
 https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/pypi-repositories#PyPIRepositories-BrowsingPyPIRepositoriesandSearchingPackages
