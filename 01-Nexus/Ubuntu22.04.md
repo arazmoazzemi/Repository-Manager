@@ -75,8 +75,6 @@ sudo docker-compose down
 ### Official ubuntu repository
 
 ```
-
-```
 cat /etc/apt/sources.list
 
 Ubuntu 22.04 LTS (Jammy Jellyfish) complete sources.list
