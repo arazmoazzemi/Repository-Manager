@@ -1,5 +1,99 @@
 
 # Nexsus repository on ubuntu 22.04
+
+*Install Nexus Repository manager*
+
+```
+*Ubuntu EC2 up and running with at least t2.medium(4GB RAM), 2GB will not work*
+
+# Change Host Name to Nexus
+sudo hostnamectl set-hostname Nexus
+
+sudo apt update
+
+# Install Docker-Compose
+sudo apt install docker
+sudo apt install docker-compose -y
+
+# Add current user to Docker group
+sudo usermod -aG docker $USER
+
+# Create docker-compose.yml
+sudo nano docker-compose.yml 
+
+# (Copy the below code high-lighted in yellow color)
+
+version: "3"
+services:
+  nexus:
+    image: sonatype/nexus3
+    restart: always
+    volumes:
+      - "nexus-data:/sonatype-work"
+    ports:
+      - "8081:8081"
+volumes:
+  nexus-data: {}
+
+
+
+# Now execute the compose file using Docker compose command to start Nexus Container
+sudo docker-compose up -d 
+
+# -d means detached mode
+
+# Make sure Nexus 3 is up and running
+sudo docker-compose logs --follow
+
+
+# Once you see the message, that's it. Nexus 3 is been setup successfully. Now press Control C and enter to come out of the above screen.
+
+# How to get Nexus admin password?
+# Now access Nexus UI by going to browser and enter public dns name with port 8081
+# Now to go to browser --> http://change to_nexus_publicdns_name:8081
+
+We need to login to Nexus docker container to get Nexus admin password.
+
+# Identify Docker container name
+sudo docker ps
+
+
+
+# Get admin password by executing below command
+sudo docker exec -it it_nexus_1 cat /nexus-data/admin.password
+
+
+# OR
+
+sudo docker exec -it it_nexus_1 bash
+cat /nexus-data/admin.password
+
+
+
+# Please follow below steps for integrating Nexus 3 with Jenkins
+https://www.cidevops.com/2018/06/jenkins-nexus-integration-how-to.html
+
+#How to stop nexus container
+sudo docker-compose down
+
+
+
+
+
+---apt repository--------------------------------------------
+https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/apt-repositories
+
+
+
+curl -u "admin:123asd!@#A" -H "Content-Type: multipart/form-data" --data-binary "@./test.deb" "http://localhost:8081/repository/apt-proxy/"
+
+
+
+http://192.168.31.24:8081/repository/apt-proxy/
+
+deb http://192.168.31.24:8081/repository/apt-proxy/ jellyfish main
+```
+----
 ### Official ubuntu repository
 
 ```
