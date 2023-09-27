@@ -65,7 +65,9 @@ sudo docker-compose logs --follow
 - We need to login to Nexus docker container to get Nexus admin password.
 
 - Identify Docker container name
+```bash
 sudo docker ps
+```
 
 # Get admin password by executing below command
 sudo docker exec -it it_nexus_1 cat /nexus-data/admin.password
