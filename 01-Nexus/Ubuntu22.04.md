@@ -45,7 +45,6 @@ volumes:
   nexus-data: {}
 ```
 
-
 - Now execute the compose file using Docker compose command to start Nexus Container:
 ```bash
 sudo docker-compose up -d 
