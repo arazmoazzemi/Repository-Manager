@@ -4,11 +4,12 @@
 
 *Install Nexus Repository manager with docker*
 
-```
-*Ubuntu EC2 up and running with at least t2.medium(4GB RAM), 2GB will not work*
+### Note: *Ubuntu EC2 up and running with at least t2.medium(4GB RAM), 2GB will not work*
 
-# Set a HostName for Nexus Machine:
+- Set a HostName for Nexus Machine:
+```bash
 sudo hostnamectl set-hostname Nexus
+```
 
 sudo apt update -y
 
