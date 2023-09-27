@@ -49,10 +49,11 @@ volumes:
 - Now execute the compose file using Docker compose command to start Nexus Container:
 ```bash
 sudo docker-compose up -d 
-
 # -d means detached mode
+```
 
-# Make sure Nexus 3 is up and running
+- Make sure Nexus 3 is up and running
+```bash
 sudo docker-compose logs --follow
 ```
 
