@@ -179,7 +179,7 @@ pip install --index-url http://192.168.200.11:8081/repository/pypi-proxy/simple 
 pip install --index-url http://192.168.200.11:8081/repository/pypi-proxy/simple -v --trusted-host 192.168.200.11 flask
 
 
-----------To build and upload this package's source distribution (sdist) to testpypi:-------------------------------------------------------
+----------To build and upload this package's source distribution (sdist) to testpypi:-----------
 
 nano setup.cfg  # update the version number and package name
 python3 -m pip install --user twine
