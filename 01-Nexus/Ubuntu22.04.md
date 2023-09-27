@@ -15,9 +15,11 @@ sudo hostnamectl set-hostname Nexus
 sudo apt update -y && apt-get upgrade -y
 ```
 
-# Install Docker-Compose
+- Install Docker-Compose:
+```bash
 sudo apt install docker
 sudo apt install docker-compose -y
+```
 
 # Add current user to Docker group
 sudo usermod -aG docker $USER
