@@ -10,8 +10,10 @@
 ```bash
 sudo hostnamectl set-hostname Nexus
 ```
-
-sudo apt update -y
+- Update system:
+```bash
+sudo apt update -y && apt-get upgrade -y
+```
 
 # Install Docker-Compose
 sudo apt install docker
