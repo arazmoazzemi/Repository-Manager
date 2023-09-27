@@ -186,9 +186,11 @@ python3 -m pip install --user twine
 python3 setup.py sdist
 twine upload --repository testpypi dist/*
 pip3 install the_name_of_your_test_package -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple
+```
 
+----
 
-------------------------------------------------------------------------------------------------------------------------
+```bash
 pip config list -v
 
 mkdir /etc/xdg/pip/
@@ -202,7 +204,6 @@ trusted-host = 192.168.200.11
 
 pip search example-package
 
---------------------------------------------------------------------------------------------------------------------------
 ```
 
 
