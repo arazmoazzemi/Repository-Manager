@@ -21,8 +21,10 @@ sudo apt install docker
 sudo apt install docker-compose -y
 ```
 
-# Add current user to Docker group
+- Add current user to Docker group:
+```bash
 sudo usermod -aG docker $USER
+```
 
 # Create docker-compose.yml
 sudo nano docker-compose.yml 
