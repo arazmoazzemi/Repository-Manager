@@ -7,7 +7,7 @@
 ```
 *Ubuntu EC2 up and running with at least t2.medium(4GB RAM), 2GB will not work*
 
-# Change Host Name to Nexus
+# Set a HostName for Nexus Machine:
 sudo hostnamectl set-hostname Nexus
 
 sudo apt update -y
