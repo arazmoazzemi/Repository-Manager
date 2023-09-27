@@ -69,7 +69,8 @@ sudo docker-compose logs --follow
 sudo docker ps
 ```
 
-# Get admin password by executing below command
+- Get admin password by executing below command
+```bash
 sudo docker exec -it it_nexus_1 cat /nexus-data/admin.password
 
 # OR
@@ -78,6 +79,7 @@ cat /nexus-data/admin.password
 
 # Please follow below steps for integrating Nexus 3 with Jenkins
 https://www.cidevops.com/2018/06/jenkins-nexus-integration-how-to.html
+```
 
 #How to stop nexus container
 sudo docker-compose down
