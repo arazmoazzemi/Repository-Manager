@@ -81,13 +81,16 @@ cat /nexus-data/admin.password
 https://www.cidevops.com/2018/06/jenkins-nexus-integration-how-to.html
 ```
 
-#How to stop nexus container
+- How to stop nexus container:
+```bash
 sudo docker-compose down
-----
 ```
-### Official ubuntu repository
 
-```
+----
+
+### Official ubuntu repository:
+
+```bash
 cat /etc/apt/sources.list
 
 Ubuntu 22.04 LTS (Jammy Jellyfish) complete sources.list
