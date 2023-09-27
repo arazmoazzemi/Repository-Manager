@@ -26,7 +26,8 @@ sudo apt install docker-compose -y
 sudo usermod -aG docker $USER
 ```
 
-# Create docker-compose.yml
+- Create docker-compose.yml:
+```bash
 sudo nano docker-compose.yml 
 
 # (Copy the below code high-lighted in yellow color)
@@ -42,7 +43,7 @@ services:
       - "8081:8081"
 volumes:
   nexus-data: {}
-
+```
 
 
 # Now execute the compose file using Docker compose command to start Nexus Container
