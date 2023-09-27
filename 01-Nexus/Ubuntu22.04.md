@@ -56,15 +56,15 @@ sudo docker-compose up -d
 sudo docker-compose logs --follow
 ```
 
-# Once you see the message, that's it. Nexus 3 is been setup successfully. Now press Control C and enter to come out of the above screen.
+- Once you see the message, that's it. Nexus 3 is been setup successfully. Now press Control C and enter to come out of the above screen.
 
-# How to get Nexus admin password?
-# Now access Nexus UI by going to browser and enter public dns name with port 8081
-# Now to go to browser --> http://change to_nexus_publicdns_name:8081
+- How to get Nexus admin password?
+- Now access Nexus UI by going to browser and enter public dns name with port 8081
+- Now to go to browser --> http://change to_nexus_publicdns_name:8081
 
-We need to login to Nexus docker container to get Nexus admin password.
+- We need to login to Nexus docker container to get Nexus admin password.
 
-# Identify Docker container name
+- Identify Docker container name
 sudo docker ps
 
 # Get admin password by executing below command
