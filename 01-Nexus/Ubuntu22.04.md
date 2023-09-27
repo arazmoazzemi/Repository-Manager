@@ -113,7 +113,7 @@ deb http://archive.canonical.com/ubuntu/ jammy partner
 ----
 ### Add apt proxy on nexus server:
 
-```
+```bash
 # Example:
 
 # Distributian name
